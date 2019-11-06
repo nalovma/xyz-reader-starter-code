@@ -1,4 +1,4 @@
-package com.example.xyzreader.data;
+package com.example.xyzreader.utils;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
