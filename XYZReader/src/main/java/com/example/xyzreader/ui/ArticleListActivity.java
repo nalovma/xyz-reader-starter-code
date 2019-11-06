@@ -1,5 +1,6 @@
 package com.example.xyzreader.ui;
 
+import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -26,6 +27,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static android.net.ConnectivityManager.CONNECTIVITY_ACTION;
+import static com.example.xyzreader.ui.ArticleDetailActivity.KEY_ARTICLE;
 
 public class ArticleListActivity extends AppCompatActivity implements
         ConnectivityReceiver.ConnectivityReceiverListener, ArticleAdapter.ArticleItemClickListener {
@@ -114,7 +116,9 @@ public class ArticleListActivity extends AppCompatActivity implements
 
     @Override
     public void onItemClick(View view, int position) {
-
+        Intent intent = new Intent(this, ArticleDetailActivity.class);
+        intent.putExtra(KEY_ARTICLE, articleAdapter.getArticleItem(position));
+        startActivity(intent);
     }
 
     @Override

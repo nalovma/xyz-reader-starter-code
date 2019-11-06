@@ -23,15 +23,23 @@
     </style>
 
     <style name="TitleStyle" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">@dimen/detail_title_text_size</item>
         <item name="android:textColor">@color/title_text_color</item>
         <item name="android:fontFamily">@font/raleway_medium</item>
     </style>
 
     <style name="SubtitleStyle" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/detail_body_text_size</item>
         <item name="android:textColor">@color/subtitle_text_color</item>
         <item name="android:fontFamily">@font/raleway_semibold</item>
     </style>
 
+    <style name="BodyTextStyle" parent="SubtitleStyle">
+        <item name="android:textColor">@color/body_text_color</item>
+    </style>
+
+    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="AppTheme">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">0sp</item>
+    </style>
 </resources>
