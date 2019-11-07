@@ -1,7 +1,7 @@
 <resources>
     <!-- detail -->
 
-    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_elevation">12dp</dimen>
     <dimen name="fab_press_translation_z">6dp</dimen>
     <dimen name="detail_title_text_size">34sp</dimen>
     <dimen name="detail_body_text_size">24sp</dimen>
@@ -9,4 +9,6 @@
     <dimen name="text_margin">24dp</dimen>
     <dimen name="appbar_layout_height">400dp</dimen>
     <dimen name="appbar_elevation">6dp</dimen>
+    <dimen name="article_title_margin_top">16dp</dimen>
+    <dimen name="article_title_margin">8dp</dimen>
 </resources>
